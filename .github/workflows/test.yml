@@ -7,7 +7,8 @@ on:
 
 jobs:
     test_ads: # nombre de nuestro jobs par hacer las pruebas necesitamos una maquina virtual, debemos de indicarle que version de linux
-        runs-on: ubuntu-18.04 # ESto es pa que haya error  entonces ahora toca definir pasos
+        #runs-on: ubuntu-18.04 # ESto es pa que haya error  entonces ahora toca definir pasos usar inferir a 18.04 o latest porque coloca la ultima version y luego peude venir una version no estable 
+        runs-on: ubuntu-20.04
         steps: # lista de pasos podemos tener varios. tienen un nombre y que s evana  ejecutar
             - name: Show message # no hay problema con el name ya que es una estructura anidada
               run: echo "Holi :)" #LOS ESPACIOS SON MUY IMPORTANTES :( 
