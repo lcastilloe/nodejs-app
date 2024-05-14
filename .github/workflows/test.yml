@@ -12,5 +12,7 @@ jobs:
         steps: # lista de pasos podemos tener varios. tienen un nombre y que s evana  ejecutar
             - name: Show message # no hay problema con el name ya que es una estructura anidada
               run: echo "Holi 2024 de mayo :)" #LOS ESPACIOS SON MUY IMPORTANTES :( 
+            - name: Show secret
+              run: echo ${{secrets.ENVIROMENT}}
 
 
