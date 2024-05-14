@@ -4,6 +4,8 @@ on:
     push: 
         branches: #nivel de rama oooooooo
         - "main" # el nombre de la rama y puede ir una lista de ramas
+env:
+    user_repository: Wonka
 
 jobs:
     test_ads: # nombre de nuestro jobs par hacer las pruebas necesitamos una maquina virtual, debemos de indicarle que version de linux
@@ -13,6 +15,8 @@ jobs:
             - name: Show message # no hay problema con el name ya que es una estructura anidada
               run: echo "Holi 2024 de mayo :)" #LOS ESPACIOS SON MUY IMPORTANTES :( 
             - name: Show secret
-              run: echo ${{secrets.ENVIROMENT}}
+              run: echo ${{secrets.ENVIROMENT}}  # un objecto que se puede acceder 
+            - name: Show varible in file 
+              run: echo ${{env.user_repository}}
 
 
