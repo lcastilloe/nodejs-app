@@ -18,5 +18,7 @@ jobs:
               run: echo ${{secrets.ENVIROMENT}}  # un objecto que se puede acceder 
             - name: Show varible in file 
               run: echo ${{env.user_repository}}
+            - name: Show variable in git
+              run: echo ${{vars.VERSION}}
 
 
