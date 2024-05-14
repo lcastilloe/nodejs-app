@@ -20,5 +20,12 @@ jobs:
               run: echo ${{env.user_repository}}
             - name: Show variable in git
               run: echo ${{vars.VERSION}}
+            - name: Setup Node
+              uses: actions/setup-node@v4 #accion de market place 
+              with:
+                node-version: '20.x'
+
+            - name: Test setup node 
+              run: node --version
 
 
