@@ -2,7 +2,7 @@ name: test
 
 on:
     push: 
-        branches: #nivel de rama
+        branches: #nivel de rama oooooooo
         - "main" # el nombre de la rama y puede ir una lista de ramas
 
 jobs:
